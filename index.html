@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cotizador">
+    <h1>Cotizador Online de Seguros</h1>
+    <form id="form_cotizador">
+        <label for="cliente">Nombre y apellido</label>
+        <input id="cliente" name="cliente" type="text">
+        <label for="nroserie">Número de Serie del Teléfono</label>
+        <input id="nroserie" name="nroserie" type="text">
+        <label for="valor">Valor del Teléfono ($)</label>
+        <input id="valor" name="valor" type="number">
+        <label for="tipo">Tipo de seguro</label>
+        <select id="tipo" name="tipo">
+            <option value="robo">Robo</option>
+            <option value="rotura">Rotura</option>
+        </select>
+        <button id="btn_cotizar" type="submit">Cotizar</button>
+    </form>
+    <h2>Su cotización</h2>
+    <section class="contenedor_cotizacion">
+    </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
